@@ -6,7 +6,6 @@ public abstract class Funcionario {
     protected String cpf;
     protected float salario;
 
-
     public Funcionario(String name, String endereco, String cpf, float salario) {
         this.setName(name);
         this.setEndereco(endereco);

@@ -17,7 +17,7 @@ public class Diretor extends Funcionario{
 
     @Override
     public float calcularSalario() {
-        return this.getSalario()+this.getAcoesEmpresa();
+        return this.getSalario()+((this.getAcoesEmpresa()*2)/12);
     }
 
     @Override

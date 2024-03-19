@@ -2,8 +2,8 @@ package Listas.L1.L1Ex2;
 
 public class TestaCliente {
     public static void main(String[] args) {
-        L1.L1Ex2.Cliente c1 = new L1.L1Ex2.Cliente(735, 578, "Fulano", 10.0f);
-        L1.L1Ex2.Cliente c2 = new L1.L1Ex2.Cliente(6734, 1367, "Beltrano", 12.0f);
+        Cliente c1 = new Cliente(735, 578, "Fulano", 10.0f);
+      Cliente c2 = new Cliente(6734, 1367, "Beltrano", 12.0f);
 
         c1.realizarDeposito(1.0f);
         c1.realizarSaque(3.0f);
