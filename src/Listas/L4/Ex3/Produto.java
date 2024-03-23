@@ -1,29 +1,26 @@
 package Listas.L4.Ex3;
 import java.util.Random;
+
 public class Produto {
     private int nr_serie;
     private int volume;
-    private String teste;
+    private String teste = "não testado";
+    private static final Random random = new Random();
 
     public Produto(int nr_serie, int volume) {
-        this.setNr_serie(nr_serie);
-        this.setVolume(volume);
-    }
-
-    public int getNr_serie() {
-        return nr_serie;
-    }
-
-    public void setNr_serie(int nr_serie) {
         this.nr_serie = nr_serie;
-    }
-
-    public int getVolume() {
-        return volume;
-    }
-
-    public void setVolume(int volume) {
         this.volume = volume;
+    }
+
+    public void testaUnidade() {
+        if (teste.equals("nao testado")) {
+            double randomNumber = random.nextDouble();
+            if (randomNumber < 0.9) {
+                this.setTeste("aprovado");
+            } else {
+                this.setTeste("reprovado");
+            }
+        }
     }
 
     public String getTeste() {
@@ -31,20 +28,23 @@ public class Produto {
     }
 
     public void setTeste(String teste) {
-        this.teste = "Não testado";
+        this.teste = teste;
     }
 
-    public void testaUnidade(){
-        Random rand = new Random();
-        int n = rand.nextInt(101);
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
 
-        if(n <= 90){
-            this.setTeste("aprovado");
-        }
+    public void setNr_serie(int nr_serie) {
+        this.nr_serie = nr_serie;
+    }
 
-        else{
-            this.setTeste("reprovado");
-        }
+    public int getNr_serie() {
+        return nr_serie;
+    }
+
+    public int getVolume() {
+        return volume;
     }
 
     public void maisVolume() {
