@@ -5,7 +5,7 @@ public class Conta {
     private float salario;
     private String nr_conta;
     private float saldo;
-    private float limite;
+    protected float limite;
 
     public Conta(String nome, float salario, String nr_conta, float saldo, float limite) {
         this.setNome(nome);

@@ -7,6 +7,6 @@ public class ContaEspecial extends Conta {
 
     @Override
     public void setLimite(float limite) {
-        super.setLimite(Math.min(limite, getSalario() * 3));
+        this.limite = Math.min(limite, getSalario()*3);
     }
 }
