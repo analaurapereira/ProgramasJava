@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Coisa j1 = jogo();
         Coisa j2 = jogo();
-
+        // JOptionPane.showInputDialog('')
         System.out.println(j1);
         System.out.println(j2);
 

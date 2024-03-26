@@ -13,8 +13,10 @@ public class Jogo {
         switch (d1) {
             case 0:
                 return c1;
+
             case 1:
                 return c2;
+
             default:
                 return c3;
         }

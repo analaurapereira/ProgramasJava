@@ -27,7 +27,8 @@ public class Cartao {
     public boolean retirada(float valor, String senha) {
         if (this.senha.equals(senha)) {
             return conta.retira(valor);
-        } else {
+        }
+        else {
             System.out.println("Senha incorreta na conta " + this.getConta());
             return false;
         }
