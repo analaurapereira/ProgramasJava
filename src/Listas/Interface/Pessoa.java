@@ -31,4 +31,9 @@ public class Pessoa extends Animal implements Cidadao, Contribuinte, Professor{
     public void ensina() {
         System.out.println("Ensinando");
     }
+
+    @Override
+    public void come() {
+        System.out.println("Comendo");
+    }
 }
